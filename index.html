@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spice Trail Culinary Academy</title>
+    <!-- Tailwind CSS via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font (Poppins) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        /* Smooth scrolling for in-page links */
+        scroll-behavior: smooth;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Header (Sticky) -->
+    <header class="bg-red-600 text-white py-4 shadow sticky top-0 z-50">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div>
+          <h1 class="text-3xl font-bold">Spice Trail Culinary Academy</h1>
+          <p class="text-sm">New Delhi, India</p>
+        </div>
+        <nav>
+          <ul class="flex space-x-6">
+            <!-- Navigation now points to sections by ID -->
+            <li><a href="#hero" class="hover:underline">Home</a></li>
+            <li><a href="#about" class="hover:underline">About Us</a></li>
+            <li><a href="#courses" class="hover:underline">Courses</a></li>
+            <li><a href="#gallery" class="hover:underline">Gallery</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative bg-no-repeat bg-cover bg-center"
+      style="
+        background-image: url('Assets/img/FoodTable.png');
+        min-height: 70vh;
+      "
+    >
+      <!-- Gradient overlay for a more dynamic background effect -->
+      <div
+        class="bg-gradient-to-r from-black bg-opacity-70 from-transparent-50 h-full w-full flex items-center justify-center"
+      >
+        <div class="container mx-auto px-4 text-center py-20">
+          <h2
+            class="text-4xl md:text-5xl font-bold text-white mb-4 text-shadow transition duration-300"
+          >
+            Discover Culinary Excellence
+          </h2>
+          <p
+            class="text-xl text-gray-200 mb-8 font-bold max-w-2xl text-shadow mx-auto"
+          >
+            Master the art of Indian and Mexican cuisine with our expert-led
+            courses.
+          </p>
+          <a
+            href="#courses"
+            class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 transform hover:scale-105"
+          >
+            Explore Courses
+          </a>
+        </div>
+      </div>
+      <!-- Wave Divider (Bottom of Hero) -->
+      <div class="wave-divider overflow-hidden text-gray-50">
+        <svg
+          class="w-full h-full"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="currentColor"
+            fill-opacity="1"
+            d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,181.3C672,171,768,117,864,85.3C960,53,1056,43,1152,48C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="bg-gradient-to-r from-white to-gray-50 pt-12 pb-12"
+    >
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img
+            src="Assets/img/Chef +preparing.png"
+            alt="Chef preparing traditional dishes in a modern kitchen"
+            class="rounded shadow-lg border-4 border-white transform hover:scale-105 transition duration-300"
+          />
+        </div>
+        <div class="md:w-1/2 md:pl-12">
+          <h3 class="text-3xl font-bold mb-4">
+            About Spice Trail Culinary Academy
+          </h3>
+          <p class="mb-4">
+            At Spice Trail Culinary Academy, we celebrate the rich culinary
+            traditions of Indian and Mexican cuisines. Our courses are designed
+            to provide both theoretical knowledge and hands-on practical skills,
+            all led by expert chefs.
+          </p>
+          <p class="mb-4">
+            Whether you’re a beginner or a seasoned cook, our curriculum is
+            crafted to inspire creativity and elevate your culinary prowess.
+          </p>
+          <a
+            href="#contact"
+            class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded transition-colors duration-300 transform hover:scale-105"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Preview Section -->
+    <section id="courses" class="bg-white py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-8">Our Courses</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Indian Cuisine Course Preview -->
+          <div
+            class="bg-gray-100 p-6 rounded shadow hover:shadow-xl transform hover:scale-105 transition duration-300"
+          >
+            <img
+              src="Assets/img/IndianCuisine.png"
+              alt="Vibrant spices and traditional Indian dishes"
+              class="w-full h-48 object-cover rounded mb-4"
+            />
+            <h4 class="text-2xl font-semibold mb-2">Indian Cuisine Mastery</h4>
+            <p class="mb-4">
+              Dive into the world of spices, flavors, and traditional cooking
+              techniques that define Indian cuisine.
+            </p>
+            <a
+              href="#contact"
+              class="text-red-600 font-semibold hover:underline transition-colors duration-300"
+              >View Course</a
+            >
+          </div>
+          <!-- Mexican Cuisine Course Preview -->
+          <div
+            class="bg-gray-100 p-6 rounded shadow hover:shadow-xl transform hover:scale-105 transition duration-300"
+          >
+            <img
+              src="Assets/img/MexicanCuisine.png"
+              alt="Colorful ingredients and authentic Mexican dishes"
+              class="w-full h-48 object-cover rounded mb-4"
+            />
+            <h4 class="text-2xl font-semibold mb-2">Mexican Culinary Arts</h4>
+            <p class="mb-4">
+              Experience the bold and vibrant flavors of Mexico through hands-on
+              cooking classes and expert guidance.
+            </p>
+            <a
+              href="#contact"
+              class="text-red-600 font-semibold hover:underline transition-colors duration-300"
+              >View Course</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mx-auto px-4 py-12">
+      <h3 class="text-3xl font-bold text-center mb-8">Gallery</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img
+          src="Assets/img/studentsCooking.png"
+          alt="Students participating in a cooking class"
+          class="rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300"
+        />
+        <img
+          src="Assets/img/vegetables.png"
+          alt="Close-up of vibrant ingredients on a kitchen counter"
+          class="rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300"
+        />
+        <img
+          src="Assets/img/culinary_Technique.png"
+          alt="Chef demonstrating a culinary technique"
+          class="rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300"
+        />
+        <img
+          src="Assets/img/platted_dish.png"
+          alt="Beautifully plated dish from the course"
+          class="rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300"
+        />
+        <img
+          src="Assets/img/studentTasting.png"
+          alt="Students tasting a variety of dishes"
+          class="rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300"
+        />
+        <img
+          src="Assets/img/groupgraduated.png"
+          alt="Group photo of Spice Trail Culinary Academy graduates"
+          class="rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300"
+        />
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-50 py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-8">
+          What Our Students Say
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="bg-white p-6 rounded shadow hover:shadow-lg transition duration-300"
+          >
+            <p class="mb-4 italic">
+              "Spice Trail Culinary Academy transformed my culinary skills. The
+              instructors are incredibly knowledgeable and passionate about
+              their craft."
+            </p>
+            <p class="font-semibold">- Anjali, Culinary Student</p>
+          </div>
+          <div
+            class="bg-white p-6 rounded shadow hover:shadow-lg transition duration-300"
+          >
+            <p class="mb-4 italic">
+              "I loved every moment of the course. It’s a perfect blend of
+              tradition and modern cooking techniques."
+            </p>
+            <p class="font-semibold">- Carlos, Professional Chef</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-4 py-12">
+      <h3 class="text-3xl font-bold text-center mb-8">Get in Touch</h3>
+      <div class="max-w-lg mx-auto">
+        <form
+          class="bg-white p-8 rounded shadow hover:shadow-lg transition duration-300"
+        >
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-semibold mb-2"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full border border-gray-300 p-2 rounded"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-semibold mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full border border-gray-300 p-2 rounded"
+              placeholder="Your email"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-semibold mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full border border-gray-300 p-2 rounded"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded transition-colors duration-300 transform hover:scale-105"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 Spice Trail Culinary Academy. All rights reserved.</p>
+        <p class="text-sm mt-2">
+          Contact:
+          <a href="mailto:contact@spicetrail.in" class="hover:underline"
+            >contact@spicetrail.in</a
+          >
+        </p>
+        <p class="text-sm mt-2">
+          Follow us on social media for the latest updates.
+        </p>
+        <div class="flex justify-center space-x-4 mt-2">
+          <a href="#" class="hover:underline">Facebook</a>
+          <a href="#" class="hover:underline">Instagram</a>
+          <a href="#" class="hover:underline">Twitter</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
